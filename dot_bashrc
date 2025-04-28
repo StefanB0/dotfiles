@@ -52,6 +52,13 @@ alias dokerdvbr='docker compose down -v && docker compose up -d --build --wait'
 alias che='chezmoi'
 alias chemoi='chezmoi'
 
+# aichat
+alias ai='aichat'
+alias chat='aichat -r ebs -s'
+
+# ngrok
+alias ngrok='~/NGROK/ngrok.exe'
+
 # python
 ## venv
 alias svenv='source .venv/Scripts/activate'
@@ -69,13 +76,6 @@ alias djmake='py manage.py makemigrations'
 alias djmigrate='py manage.py migrate'
 alias djload='py manage.py loaddata fixtures/*.json'
 alias djshow='py manage.py show_urls'
-
-# ngrok
-alias ngrok='~/NGROK/ngrok.exe'
-
-# aichat
-alias ai='aichat'
-alias chat='aichat -r ebs -s'
 
 # shortcuts
 # workdir1='/c/Users/stefan.boicu/Work/Internship/ebs-milestone-2'
