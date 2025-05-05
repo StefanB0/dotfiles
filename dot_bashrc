@@ -39,6 +39,8 @@ alias push='git push origin'
 alias stat='git status'  # 'status' is protected name so using 'stat' instead
 alias tag='git tag'
 alias newtag='git tag -a'
+alias gdiff='git --no-pager diff' # -- path/to/file
+alias gdiff1='git diff-tree --no-commit-id --patch HEAD' # -- path/to/file
 
 # docker
 alias dokerup='docker compose up -d --wait'
@@ -97,3 +99,7 @@ export EDITOR='code --wait'
 
 # neovim config
 # export PATH=$PATH:/c/Program\ Files/Neovim/bin
+
+### Shell Completion ###
+source ~/.config/shell/.autocomplete_aichat.sh
+source ~/.config/shell/.autocomplete_chezmoi.sh
