@@ -120,6 +120,44 @@ denv() {
     fi
 }
 
+function gitclean() {
+    local skip_confirm=false
+
+    # Parse arguments
+    while [[ "$#" -gt 0 ]]; do
+        case $1 in
+            --skip) skip_confirm=true ;;
+            *) echo "Unknown option: $1" >&2; return 1 ;;
+        esac
+        shift
+    done
+
+    # Get branches to be deleted
+    local branches_to_delete=$(git branch --merged | grep -v -E "(^\*|main|dev|stage|ivanov)")
+
+    # If no branches to delete, exit
+    if [[ -z "$branches_to_delete" ]]; then
+        echo "No merged branches to clean up."
+        return 0
+    fi
+
+    # Preview branches
+    echo "Branches to be deleted:"
+    echo "$branches_to_delete"
+
+    # Confirm unless --skip is used
+    if [[ "$skip_confirm" = false ]]; then
+        read -p "Do you want to delete these branches? (y/N) " confirm
+        if [[ "$confirm" != [yY] && "$confirm" != [yY][eE][sS] ]]; then
+            echo "Branch cleanup canceled."
+            return 0
+        fi
+    fi
+
+    # Delete branches
+    echo "$branches_to_delete" | xargs git branch -d
+}
+
 function goto() {
     local config_file="C:/Users/stefan.boicu/.config/project_paths/config.txt"
     local home_file="C:/Users/stefan.boicu/.config/project_paths/home.txt"
