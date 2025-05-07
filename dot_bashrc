@@ -25,8 +25,10 @@ alias mkdir='mkdir -pv'
 # open in windows explorer
 alias exp='explorer .'
 alias wtc='wt -d $(pwd)'
+alias wtt='wt new-tab -d $(pwd)'
 
 # git
+alias lzg='lazygit'
 alias addup='git add -u'
 alias addall='git add .'
 alias branch='git branch'
