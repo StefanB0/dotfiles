@@ -1,0 +1,3 @@
+steps:
+  - .role ebs-code-review
+  - .file `git diff develop` -- generate git commit message
