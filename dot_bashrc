@@ -9,6 +9,7 @@ alias .5='cd ../../../../..'
 # shell
 alias rbash='. ~/.bashrc' # reload shell
 alias xbashrc='nano ~/.bashrc' # edit .bashrc
+alias xx='exit'
 
 # 'ls' to 'eza'
 alias ls='eza -1 --color=always --group-directories-first --icons=auto -T --level=1'
