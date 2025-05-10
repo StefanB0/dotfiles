@@ -1,5 +1,5 @@
 ---
-model: claude:claude-3-5-haiku-latest
+model: claude:claude-3-5-haiku-20241022
 ---
 - name: ebs
   prompt: |-
