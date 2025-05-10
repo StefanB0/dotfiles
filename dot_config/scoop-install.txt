@@ -1,0 +1,19 @@
+# scoop bucket add main
+# scoop bucket add extras
+7zip
+ffmpeg
+chezmoi
+miktex
+pipx
+restic
+yt-dlp
+
+extras/lazygit
+extras/vlc
+extras/age
+extras/losslesscut
+extras/media-downloader
+
+# rclone
+# shellcheck
+# extras/waterfox
