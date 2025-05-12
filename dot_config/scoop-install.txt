@@ -1,19 +1,28 @@
-# scoop bucket add main
-# scoop bucket add extras
 7zip
 ffmpeg
 chezmoi
+neovim
 miktex
 pipx
 restic
+clink
 yt-dlp
 
-extras/lazygit
+extras/obsidian
+extras/krita
 extras/vlc
 extras/age
+extras/lazygit
 extras/losslesscut
 extras/media-downloader
 
+# fzf
 # rclone
 # shellcheck
 # extras/waterfox
+# extras/librewolf
+# extras/draw.io
+# extras/postman
+
+# scoop bucket add main
+# scoop bucket add extras
