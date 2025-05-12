@@ -94,8 +94,6 @@ source ~/.config/shell/.bash_utils.sh
 
 ### Environment ###
 
-export GITHUB_USERNAME='StefanB0'
-
 export EDITOR='code --wait'
 # export EDITOR='C:\\Program Files\\Notepad++\\notepad++.exe'
 # export EDITOR='C:\\Users\\stefan.boicu\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
