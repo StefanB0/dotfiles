@@ -56,6 +56,7 @@ alias dokerdvbr='docker compose down -v && docker compose up -d --build --wait'
 # chezmoi
 alias che='chezmoi'
 alias chemoi='chezmoi'
+alias che-lazy='cd $(che source-path) && lzg'
 
 # aichat
 alias ai='aichat'
