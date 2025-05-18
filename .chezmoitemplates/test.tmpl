@@ -1,0 +1,17 @@
+{{- if eq .chezmoi.os "windows" -}}
+{{ template "debian-wsl-bashrc.sh" }}
+{{ end -}}
+
+{{- if eq .chezmoi.os "linux" }}
+# Linux
+{{- else -}}
+# Not Linux
+{{- end }}
+
+{{- if ne .chezmoi.os "windows" }}
+~/AppData/**
+{{- end }}
+
+{{- if ne .chezmoi.os "linux" }}
+~/bash/bin/or/something/** 
+{{- end }}

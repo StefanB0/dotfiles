@@ -1,0 +1,30 @@
+{{- if eq .chezmoi.os "linux" -}}
+{{ template "debian-wsl-bashrc.sh" }}
+{{ end -}}
+### ALIASES ###
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+# shortcuts
+# workdir1='/c/Users/stefan.boicu/Work/Internship/ebs-milestone-2'
+# export workdir1
+
+### Macros ###
+source ~/.config/shell/.bash_macros.sh
+
+### Utils ###
+source ~/.config/shell/.bash_utils.sh
+
+### Environment Variables ###
+
+export EDITOR='code --wait'
+# export EDITOR='C:\\Program Files\\Notepad++\\notepad++.exe'
+# export EDITOR='C:\\Users\\stefan.boicu\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
+
+# neovim config
+# export PATH=$PATH:/c/Program\ Files/Neovim/bin
+
+### Shell Completion ###
+source ~/.config/shell/.autocomplete_aichat.sh
+source ~/.config/shell/.autocomplete_chezmoi.sh

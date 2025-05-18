@@ -68,7 +68,7 @@ cargo install eza aichat du-dust ripgrep bat bottom git-delta zoxide hyperfine p
 # WSL
 
 ### Install the linux distribution (Debian)
-Write-Host "Installing Scoop..." -ForegroundColor Cyan
+Write-Host "Installing Windows Subsystem for Linux..." -ForegroundColor Cyan
 
 wsl --install Debian
 
@@ -83,10 +83,10 @@ $WSLTOHOME = "/mnt/c/Users/$env:USERNAME/"
 
 wsl -d Debian bash -c "mkdir -p ~/.config/install ~/.config/keys/"
 wsl -d Debian bash -c "cp $WSLTOHOME/.config/keys/chezmoi-key.txt ~/.config/keys/chezmoi-key.txt"
-wsl -d Debian bash -c "cp $WSLTOHOME/.config/install/windows-wsl-install.sh ~/.config/install/windows-wsl-install.sh"
-wsl -d Debian bash -c "chmod +x ~/.config/install/windows-wsl-install.sh && ~/.config/install/windows-wsl-install.sh"
+wsl -d Debian bash -c "cp $WSLTOHOME/.config/install/debian.sh ~/.config/install/debian.sh"
+wsl -d Debian bash -c "chmod +x ~/.config/install/debian.sh && ~/.config/install/debian.sh"
 
-########################################### Cleanup ###########################################
+# Cleanup 
 
 Write-Host "***********************************************************************************************"
 Write-Host "Setup Script is complete!" -ForegroundColor Green
