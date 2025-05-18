@@ -1,8 +1,13 @@
 # Meta files
 README.md
 
+# Keys
+~/.config/keys
+~/.ssh
+
 # Environment variables
 **/.env
+
 
 # aichat
 **/aichat/sessions
