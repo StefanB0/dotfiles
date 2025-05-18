@@ -1,3 +1,4 @@
+# Meta files
 README.md
 
 # Environment variables
@@ -5,3 +6,4 @@ README.md
 
 # aichat
 **/aichat/sessions
+**/aichat/rags
