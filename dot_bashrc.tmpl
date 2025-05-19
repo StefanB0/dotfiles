@@ -25,6 +25,11 @@ export EDITOR='code --wait'
 # neovim config
 # export PATH=$PATH:/c/Program\ Files/Neovim/bin
 
+{{- if eq .chezmoi.os "windows" }} {{- printf "\n"}}
+# aichat
+export AICHAT_CONFIG_DIR="C:\\Users\\$USERNAME\\.config\\aichat"
+{{- end }}
+
 ### Shell Completion ###
 source ~/.config/shell/.autocomplete_aichat.sh
 source ~/.config/shell/.autocomplete_chezmoi.sh
