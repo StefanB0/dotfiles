@@ -23,10 +23,12 @@ alias lrr='eza -1aT --color=always --group-directories-first --icons=auto'
 # mkdir
 alias mkdir='mkdir -pv'
 
+{{- if eq .chezmoi.os "windows" }} {{- printf "\n"}}
 # open in windows explorer
 alias exp='explorer .'
 alias wtc='wt -d $(pwd)'
 alias wtt='wt new-tab -d $(pwd)'
+{{- end }}
 
 # git
 alias lzg='lazygit'
@@ -66,8 +68,11 @@ alias chat='aichat -r ebs -s'
 alias ngrok='~/NGROK/ngrok.exe'
 
 # python
+
+{{- if eq .chezmoi.os "windows" }}
 ## venv
 alias svenv='source .venv/Scripts/activate'
+{{- end }}
 
 ## tools
 alias pjson='python -m json.tool'
@@ -82,3 +87,6 @@ alias djmake='py manage.py makemigrations'
 alias djmigrate='py manage.py migrate'
 alias djload='py manage.py loaddata fixtures/*.json'
 alias djshow='py manage.py show_urls'
+
+# shortcuts
+# alias workdir1='/c/Users/stefan.boicu/Work/Internship/ebs-milestone-2'
