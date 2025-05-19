@@ -12,8 +12,7 @@ README.md
 **/aichat/sessions
 **/aichat/rags
 
-{{- if ne .chezmoi.os "windows" }}
-
+{{- if ne .chezmoi.os "windows" }} {{- printf "\n"}}
 # Windows files
 ~/AppData/**
 {{- end }}
