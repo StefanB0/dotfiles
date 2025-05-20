@@ -24,8 +24,10 @@ export EDITOR='code --wait'
 export AICHAT_CONFIG_DIR="C:\\Users\\$USERNAME\\.config\\aichat"
 {{- end }}
 
+{{- if eq .chezmoi.os "linux" }} {{- printf "\n"}}
 # Cargo env
 source $HOME/.cargo/env
+{{- end }}
 
 ### Shell Completion ###
 source ~/.config/shell/.autocomplete_aichat.sh
