@@ -66,6 +66,4 @@ Write-Host "Scoop apps installation complete!" -ForegroundColor Green
 cargo install eza aichat du-dust ripgrep bat bottom git-delta zoxide hyperfine procs
 
 # Cleanup 
-
-Write-Host "***********************************************************************************************"
 Write-Host "Setup Script is complete!" -ForegroundColor Green
