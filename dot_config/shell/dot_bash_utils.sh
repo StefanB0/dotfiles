@@ -26,6 +26,12 @@ function mtouch () {
 	done
 }
 
+# Generate merge requests
+function ebs-pr() {
+	# wt -d $(pwd) -p "Git Bash" "C:/Program Files/Git/bin/bash.exe" -i -l -c "aichat --macro merge-request && echo -e '\n\033[32mPress Enter to exit...\033[0m' && read"
+	wt -d $(pwd) -p "Git Bash" "C:/Program Files/Git/bin/bash.exe" -i -l -c "aichat --macro merge-request && read"
+}
+
 # Function to compare two strings and highlight differences
 function cmp-color() {
 	STRING_A="$1"
