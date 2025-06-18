@@ -23,7 +23,7 @@ editor: notepad++                 # Specifies the command used to edit input buf
 # wrap: no                        # Controls text wrapping (no, auto, <max-width>)
 # wrap_code: false                # Enables or disables wrapping of code blocks
 
-model: claude:claude-3-5-haiku-20241022
+model: openrouter:anthropic/claude-3-5-haiku
 
 clients:
   # See https://docs.anthropic.com/claude/reference/getting-started-with-the-api

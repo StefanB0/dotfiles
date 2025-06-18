@@ -1,6 +1,6 @@
 ---
 name: anon-engineer
-model: openai:gpt-4o
+model: openrouter:anthropic/claude-3-5-haiku
 temperature: 0.5  # Lowered temperature for more focused responses.
 top_p: 0.9
 
