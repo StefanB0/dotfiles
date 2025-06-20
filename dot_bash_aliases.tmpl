@@ -81,8 +81,8 @@ alias svenv='source .venv/Scripts/activate'
 
 ## tools
 alias pjson='python -m json.tool'
-alias rc='ruff check'
-alias rfix='ruff check --fix'
+alias rc='ruff check && ruff format --check'
+alias rfix='ruff check --fix && ruff format'
 alias rformat='ruff format'
 
 ## django
