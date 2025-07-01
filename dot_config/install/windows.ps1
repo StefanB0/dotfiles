@@ -51,7 +51,7 @@ scoop bucket add nerd-fonts
 Write-Host "Installing Scoop apps..." -ForegroundColor Green
 
 scoop install `
-    7zip ffmpeg chezmoi neovim miktex pipx restic clink yt-dlp age vcredist2022 `
+    7zip ffmpeg chezmoi neovim miktex pipx restic clink yt-dlp age vcredist2022 poppler `
     firefox waterfox discord  obsidian keepassxc krita vlc ocenaudio obs-studio losslesscut media-downloader `
     vscode lazygit pycharm nodejs python rustup `
     cascadia-code firacode-nf-mono go-mono-nf
